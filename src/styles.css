@@ -105,6 +105,10 @@ svg {
       padding:  0rem 3rem;
       padding-bottom: 2rem;
 }
+.show-form{
+      display: none;
+}
+
 .color__purple{
       color: var(--Purple);
 }
@@ -225,7 +229,7 @@ svg {
       gap:2rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 900px) {
       .icon__menu {
             display: block;
             cursor: pointer;
@@ -266,7 +270,7 @@ svg {
       }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 900px) {
       .navbar {
             display: flex;
             justify-content: flex-end;
@@ -296,20 +300,20 @@ svg {
       .header{
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: repeat(8,1fr);
+            /* grid-template-rows: repeat(8,1fr); */
             padding: 0rem 7rem;
             padding-bottom: 4rem;
       }
       .header__info{
             grid-row: 1/8;
-            gap:1.5rem
+            gap:1.5rem;
       }
       .card__title{
-            font-size: 80px;
+            font-size: 60px;
             text-align: left;
       }
       .card__header__title{
-            font-size: 40px;
+            font-size: 30px;
       }
       .card__header__para{
             text-align: left;
@@ -327,6 +331,7 @@ svg {
             flex-direction: column;
             justify-content: center;
             grid-row: 1/9;
+            min-width: 300px;
       }
       .btn{
             grid-column: 1/2;

@@ -1,16 +1,20 @@
 const contactame=document.querySelector("#contactame");
-const modal=document.querySelector("#modal");
-modal.style.display='none';
+const modal=document.querySelector(".formulario_contact");
+// modal.style.display='none';
 
-function showForm(){
-      // modal.close();
-      console.log("click");
-      modal.style.display='';
-}
-
-contactame.addEventListener("click", function(){
-      showForm();
+// function showForm(){
+//       // modal.close();
+//       console.log("click");
+//       modal.style.display='';
+// }
+const buttonForm= document.querySelector(".btn__text");
+buttonForm.addEventListener("click", function(){
+      modal.classList.toggle("show-form");
+      console.log('click show form');
 })
+// contactame.addEventListener("click", function(){
+//       showForm();
+// })
 
 function showAlert(){
       const formRegister = document.querySelector("#formRegister");
